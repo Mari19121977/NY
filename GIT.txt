@@ -1,0 +1,35 @@
+git config --list - список налаштувань
+git config --global --list - список глобальних налаштувань
+git config --global user.email 'email' - встановити email
+git config --global user.name 'name' - встановити ім'я
+
+git init - створити репозиторій
+git add <filename> (. - всі файли) - добавити файл
+git status - перевірка статусу
+git commit -m'comment' - додавання файлів у рипозиторій
+git commit -a -m'comment' - додає файли і комітить
+git log - переглянути коміти (-2 - останні 2 коміти)
+git log - переглянути коміти (-p - зміни)
+git checkout <hesh> - перейти до попередньої версії
+
+git remote add <https> - додає віддалений репозиторій
+git push - відправити на github локальний репозиторій (-u - збереже налаштування)
+git clone <https> - скопіювати з github
+git pull - отримати зміни з віддаленого репозиторію і злити в основну вітку
+git fetch - отримати зміни з віддаленого репозиторію
+git merge - злити зміни в основну вітку
+
+git branch - подивитись всі гілки (<name> створити нову гілку)
+git checkout <name> - перейти в іншу гілку
+git checkout -b <name> - створити нову гілку і перейти до неї
+git merge <name> - злиття гілок (до поточної додати name)
+git branch -d <name> (видалити гілку)
+
+
+git rm --cached <filename> - прибрати файл з під контролю GIT
+git mv стара_назва нова_назва - перейменування
+
+git log --pretty - скорочений вигляд
+git commit --amend - змінити останній коміт
+git reset HEAD <filename> - вилучити один файл з індексації
+git checkout -- <filename> - скасувати зміни у файлі
